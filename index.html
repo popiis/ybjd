@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1200,initial-scale=0,user-scalable=0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link href="https://www.yuanbenjiandan.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <style>
+
+        .business_box{
+            width:100%;
+            
+        }
+        .business_box{
+            border-bottom: 1px solid #999;
+            width: 100%;
+            background: #f8f8f8;
+        }
+        .business_box>.business_header{
+            text-align: center;
+            padding-top:40px;
+            padding-bottom: 20px;
+        }
+        .business_box>.business_header>h3{
+            font-size: 32px;
+        }
+        .business_box>.business_header>p{
+            font-size: 32px;
+        }
+       .business_cont{
+           width:1200px;
+           margin:0 auto;
+       }
+       /* 关于原本简单 */
+       .about_cont{
+           border:1px solid #e4e4e4;
+           padding:10px 20px;
+           height: 90px;
+           color:#999;
+           margin-top: 100px
+       }
+       .about_cont>img{
+           display: block;
+           float: left;
+           width: 15%
+       }
+       .about_cont>p{
+           display: block;
+           float: right;
+           width:83%;
+           padding-left:10px;
+           line-height: 25px;
+       }
+       .about_box{
+           height: 360px;
+       }
+       .about_box>div{
+           display: block;
+           float: left;
+           width: 33.33%;
+       }
+       .about_box>div>img{
+           width: 100%;
+           
+        }
+        .about_box>div>p{
+            color:#999;
+            width: 80%;
+            line-height: 25px;
+            margin-top: 30px
+        }
+        /* 新闻 */
+        .news_box{
+            display: flex;
+            justify-items: center;
+            justify-content: space-around;
+            margin-top:50px;
+            height: 460px;
+        }
+        .news_box>div{
+           width: 32%;
+        }
+        .news_box>div>p{
+            color:#999;
+            width: 100%;
+            line-height: 25px;
+            margin-top: 10px
+        }
+        .news_box>div>img{
+           width: 100%;
+           height: 210px;
+        }
+        .news_box>div>h5{
+            color:#444;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 16px
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="nav">
+            <div class="logo">
+                <img src="http://www.yuanbenjiandan.com/uploads/allimg/20190812/478ca58c637925a3f58a39fd691af69d.png" alt="">
+            </div>
+            <div class="navtab">
+                <li class="navActive"><a href="index.html">首页</a></li>
+                <li><a href="company.html">公司简介</a></li>
+                <li><a href="business.html">业务内容</a></li>
+                <li><a href="news.html">最新动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </div>
+       </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/51d1a2d5065f40c26edf7fe21448e1d9.jpg" alt="" srcset=""></div>
+            <div class="swiper-slide"><img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/27122394b845d5aeaf841f207552b3ee.jpg" alt=""></div>
+            </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <div class="business">
+       <div class="business_box">
+            <div class="business_header">
+                <h3> BUSINESS CONTENT</h3>
+                <p> 业务内容</p>
+            </div>
+       </div>
+       <div class="business_cont">
+            <img src="https://www.yuanbenjiandan.com/uploads/ueditor/20190813/50219981391a544279a5a7672efe8044.jpg" alt="">
+       </div>
+    </div>
+    <div class="business">
+        <div class="business_box">
+                <div class="business_header">
+                    <h3> ABOUT US</h3>
+                    <p>关于原本简单</p>
+                </div>
+        </div>
+        <div class="business_cont">
+            <div class="about_cont">
+                <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ac0cfaf57295214c69f7ac9f7f7f6a3d.png" alt="">
+                <p>原本简单公司致力于成为实体店整合营销第一品牌，利用创新的商业模式，赋能500万实体店，服务5000万超级会员，影响5亿中国人回归实体消费。公司创始团队曾是淘宝聚划算本地生活团购全国最大运营商，并成为打造全国最大社区便利店连锁品牌（全国近400个城市地推服务商、加盟店超过18000家），并成功获得近3亿元A轮融资。</p>
+            </div>
+            <div class="about_box">
+                <div class="about_one">
+                    <img src="https://www.yuanbenjiandan.com/template/pc/skin/img/about_num1.gif" alt="">
+                    <p>我们通过研究理解用户的思维、行为、和目标，挖掘用户对产品使用的潜在需求，通过我们服务于各行业客户的丰富经验，结合品牌的优势进行分析，让用户在情绪上、行为上感知产品的创新、感受完美的体验。超越品牌的价值。</p>
+                </div>
+                <div class="about_two">
+                    <img src="https://www.yuanbenjiandan.com/template/pc/skin/img/about_num2.gif" alt="">
+                    <p>我们是一只富有激情的创新团队。我们将设计通过情感的表达把用户和产品很自然的连接在一起，让用户享受使用产品的愉悦，以此来强化对产品、品牌的体验认知！通过自然的交互和生动的设计展现出来，用一个充满情感化的设计打动用户！</p>
+                </div>
+                <div class="about_three">
+                    <img src="https://www.yuanbenjiandan.com/template/pc/skin/img/20170315144002116.gif" alt="">
+                    <p>为客户提供品牌化、一站式的解决方案。服务涵盖了互联网，掌上移动设备、桌面平台以及电子消费类产品等。为客户提供从品牌设计、概念设计、交互设计、视觉设计、功能研发到最终产品实现。为客户提供真正具有创新价值的产品体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="business">
+        <div class="business_box">
+            <div class="business_header">
+                <h3> NEWS </h3>
+                <p style="font-size: 16px">最新动态</p>
+            </div>
+        </div>
+        <div class="business_cont">
+            <div class="about_box news_box">
+                <div class="about_one">
+                    <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                    <h5>原本简单，让生意更简单!</h5>
+                    <p>吴晓波的《大败局》曾经惊醒了很多人，原来再大的企业，离失败也只是一步之遥，究其原因，一句话：生意，是一门相当复杂的科学。不管什么样的生意，线上还是线下，都涉及到方方面面的..</p>
+                </div>
+                <div class="about_two">
+                    <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                    <h5>走近我们，一起来认识下原本简单</h5>
+                    <p>我们是一只富有激情的创新团队。我们将设计通过情感的表达把用户和产品很自然的连接在一起，让用户享受使用产品的愉悦，以此来强化对产品、品牌的体验认知！通过自然的交互和生动的设计展现出来，用一个充满情感化的设计打动用户！</p>
+                </div>
+                <div class="about_three">
+                    <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                    <h5>本地生活服务行业的发展与变化</h5>
+                    <p>为客户提供品牌化、一站式的解决方案。服务涵盖了互联网，掌上移动设备、桌面平台以及电子消费类产品等。为客户提供从品牌设计、概念设计、交互设计、视觉设计、功能研发到最终产品实现。为客户提供真正具有创新价值的产品体验。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="footer_logo">
+                <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li>代理加盟</li>
+                </ul>
+                <ul>
+                    <li>商家合作</li>
+                    <li>便利店</li>
+                    <li>联盟商家</li>
+                    <li>品牌商</li>
+                </ul>
+                <ul>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="footer_mass">
+                <ul>
+                    <p> 深圳市原本简单网络科技有限公司</p>
+                    <p>Shenzhen originally simple network technology co.,LTD</p>
+                </ul>
+                <ul>
+                    <li>Add:深圳市福田区金田路富德生命保险大厦10楼1001室 P.C:518000</li>
+                    <li><span>E-mail:ybjd@yuanbenjiandan.com</span><span>粤ICP备19060365号-1</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>        
+        var mySwiper = new Swiper ('.swiper-container', {
+          direction: 'horizontal', // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+         
+        })        
+    </script>
+</body>
+</html>

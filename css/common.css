@@ -1,0 +1,96 @@
+
+/*base style*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary{ margin:0; padding:0;}
+body{ font-family:"Microsoft Yahei","Arial"; color:#333; background-color:#fff; font-size:15px; background-image:url(about:blank); background-attachment:fixed; overflow-x:hidden;}
+a{ color:#06f; text-decoration:none;}
+a:hover{ color:#f60; text-decoration:none;}
+img{ border:none; vertical-align:middle; max-width: 100%;}
+i,em{ font-style:normal;}
+li{ list-style-type:none;}
+textarea{ resize:vertical;}
+input, select, textarea{ font-family:"\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Arial"; background-color:#fff; margin:0; padding:0; outline:none;}
+area{ outline: none;}
+
+/* 头部样式 */
+.header{
+    background-color:#030336;
+}
+.header>.nav{
+    height:100px;
+    width:1200px;
+    margin:0 auto;
+    color:#ccc; 
+}
+.header>.nav>.logo{
+    width: 135px;
+    height: 62px;
+    display: block;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-top: -30px;
+}
+.header>.nav>.logo>img{
+    width: 100%;
+    height: 100%;
+}
+.header>.nav>.navtab{
+    display: block;
+    float: right;
+
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.header>.nav>.navtab>li{
+    display: block;
+    text-align: center;
+    float: left;
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right:10px;
+    user-select: none;
+}
+.header>.nav>.navtab>li>a{
+    color:#ccc
+}
+.header>.nav>.navtab>li:hover{
+    background: #E61D4C
+}
+.navActive{
+    width: 100px;
+    height: 30px;
+    background: #E61D4C;
+    color:#fff;
+}
+/* 底部样式 */
+.footer{
+    background: #030336;
+    
+}
+.footer_box{
+    width: 1200px;
+    height: 230px;
+    margin:0 auto;
+    color:#ccc; 
+    padding-top:50px;
+}
+.footer_box>div{
+    width:33.33%;
+    display: block;
+    float: left;
+}
+.footer_nav>ul{
+    display: block;
+    float: left;
+    margin-right:50px;
+}
+.footer_nav>ul>li{
+    padding-top:10px;
+}
+.footer_mass>ul:last-child{
+    margin-top:25px
+}

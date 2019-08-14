@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1200,initial-scale=0,user-scalable=0">
+    <title>公司简介</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link href="https://www.yuanbenjiandan.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aui-tab.js"></script>
+    <style>
+        	.content{width: 1200px;margin: 1% auto 40px;}
+            .content img{width:100%;}
+            .tabtitle{display: flex;width: 100%;margin: 50px auto;align-items: center;justify-content: center;}
+            .tabtitle>div{
+                width: 160px;
+                height: 40px;
+                font-size: 14px;
+                border: 1px solid #999999;
+                color: #000000;
+                text-align: center;
+                line-height: 40px;
+                margin-left: 10px;
+                user-select: none;
+                cursor: pointer;
+            }
+            .tabtitle>div.aui-active{
+                background: #e61d4c;
+                border: none;
+                color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="nav">
+            <div class="logo">
+                <img src="http://www.yuanbenjiandan.com/uploads/allimg/20190812/478ca58c637925a3f58a39fd691af69d.png" alt="">
+            </div>
+            <div class="navtab">
+                <li><a href="index.html">首页</a></li>
+                <li  class="navActive"><a href="company.html">公司简介</a></li>
+                <li><a href="business.html">业务内容</a></li>
+                <li><a href="news.html">最新动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </div>
+       </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/company1.jpg" alt="" srcset=""></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="tabtitle" id="title">
+            <div class="aui-active">公司简介</div>
+            <div>发展历程</div>
+            <div>合作伙伴</div>
+        </div>
+        <div class="content content1">
+            <img src="https://www.yuanbenjiandan.com/uploads/ueditor/20190813/c5d62bee82f5e08ccb03077300dcdc1f.jpg" alt="">
+        </div>
+        <div class="content content2">
+            <img src="https://www.yuanbenjiandan.com/uploads/ueditor/20190813/3af3c97cfa7d4e892f19c22ee0d30300.png" alt="">
+        </div>
+        <div class="content content3">
+           <img src="https://www.yuanbenjiandan.com/uploads/ueditor/20190813/14ee0132fd72c4cb30242eacd772cb0b.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="footer_logo">
+                <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li>代理加盟</li>
+                </ul>
+                <ul>
+                    <li>商家合作</li>
+                    <li>便利店</li>
+                    <li>联盟商家</li>
+                    <li>品牌商</li>
+                </ul>
+                <ul>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="footer_mass">
+                <ul>
+                    <p> 深圳市原本简单网络科技有限公司</p>
+                    <p>Shenzhen originally simple network technology co.,LTD</p>
+                </ul>
+                <ul>
+                    <li>Add:深圳市福田区金田路富德生命保险大厦10楼1001室 P.C:518000</li>
+                    <li><span>E-mail:ybjd@yuanbenjiandan.com</span><span>粤ICP备19060365号-1</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+		$('.content').hide();
+		$('.content1').show();
+	var tab=new auiTab({
+		element:document.getElementById('title'),
+	},function(res){
+		console.log(res)
+		$('.content').hide();
+		$('.content'+res.index).show();
+	})
+</script>
+</body>
+</html>

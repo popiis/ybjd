@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1200,initial-scale=0,user-scalable=0">
+    <title>最新动态</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link href="https://www.yuanbenjiandan.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aui-tab.js"></script>
+    <style>
+  .photo{
+   display: flex;
+   justify-content:flex-start;
+   flex-wrap: wrap;
+   margin:3rem 0
+  }
+  .photo>img{
+    width: 24%;
+  height:200px;
+  overflow: hidden;
+  }
+  .photo>img:first-child{
+  margin-top:1rem;
+  }
+  .photo>img+img{
+    margin-top:1rem;
+    margin-left:0.5rem
+    }
+  .photo>img:nth-child(5){
+    margin-left:0
+  }  
+  .content{width: 1200px;margin: 1% auto 40px;}
+  .tabtitle{display: flex;width: 100%;margin: 50px auto;align-items: center;justify-content: center;}
+  .tabtitle>div{
+    width: 386px;
+    height: 250px;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .content>li{
+    width:1200px;
+    margin:0 auto;
+    margin-top:80px;
+  }
+  .content>li>.title{
+    text-align: center;
+  }
+  .content>li>.title>h2{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .content>li>.title>p{
+    font-size: 14px;
+    margin:10px 0;
+  }
+  .content>li>img{
+    width:100%;
+    margin:20px 0;
+  }
+  .content>li>p{
+    font-size: 14px;
+    color:#444;
+    overflow: hidden;
+    line-height: 25px;
+  }
+  .content>li>.more{
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    margin:0 auto;
+    margin-top:30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #EEEEEE
+  }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="nav">
+            <div class="logo">
+                <img src="new.jpg" alt="">
+            </div>
+            <div class="navtab">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="company.html">公司简介</a></li>
+                <li><a href="business.html">业务内容</a></li>
+                <li class="navActive"><a href="news.html">最新动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </div>
+       </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/new.jpg" alt="" srcset=""></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="tabtitle" id="title">
+            <div class="aui-active">
+                <img src="http://www.yuanbenjiandan.com/template/pc/skin/images/company.png" alt="">
+            </div>
+            <div>
+                <img src="http://www.yuanbenjiandan.com/template/pc/skin/images/news.png" alt="">
+            </div>
+            <div>
+                <img src="http://www.yuanbenjiandan.com/template/pc/skin/images/item.png" alt="">
+            </div>
+        </div>
+        <div class="content content1">
+            <li>
+                <div class="title">
+                <h2>原本简单，让生意更简单</h2>
+                <p>发出日期：2019-08-13</p>
+                </div>
+                <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                <p>
+                   
+吴晓波的《大败局》曾经惊醒了很多人，原来再大的企业，离失败也只是一步之遥，究其原因，一句话：生意，是一门相当复杂的科学。不管什么样的生意，线上还是线下，都涉及到方方面面的科学，无论是战略、资金、品牌、产品、技术、团队，还是市场、营销、竞争、服务……哪一个环节出问题，都是千里之堤，毁于蚁穴。于是乎，成千上万的创业者前赴后继，成功上岸者屈指可数，能跑出独角兽者更是微乎其微！...
+                
+                </p>
+                <p class="more"><a href="#">查看详细><span></span></a></p>
+            </li>
+        </div>
+        <div class="content content2">
+            <li>
+                <div class="title">
+                <h2>原本简单，让生意更简单</h2>
+                <p>发出日期：2019-08-13</p>
+                </div>
+                <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                <p>
+                    
+吴晓波的《大败局》曾经惊醒了很多人，原来再大的企业，离失败也只是一步之遥，究其原因，一句话：生意，是一门相当复杂的科学。不管什么样的生意，线上还是线下，都涉及到方方面面的科学，无论是战略、资金、品牌、产品、技术、团队，还是市场、营销、竞争、服务……哪一个环节出问题，都是千里之堤，毁于蚁穴。于是乎，成千上万的创业者前赴后继，成功上岸者屈指可数，能跑出独角兽者更是微乎其微！...
+                
+                </p>
+                <p class="more"><a href="#">查看详细><span></span></a></p>
+            </li>
+        </div>
+        <div class="content content3">
+            <li>
+                <div class="title">
+                <h2>原本简单，让生意更简单</h2>
+                <p>发出日期：2019-08-13</p>
+                </div>
+                <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/ed6bfaf29bd60b2e5115abd058098181.jpg" alt="">
+                <p>
+                    
+吴晓波的《大败局》曾经惊醒了很多人，原来再大的企业，离失败也只是一步之遥，究其原因，一句话：生意，是一门相当复杂的科学。不管什么样的生意，线上还是线下，都涉及到方方面面的科学，无论是战略、资金、品牌、产品、技术、团队，还是市场、营销、竞争、服务……哪一个环节出问题，都是千里之堤，毁于蚁穴。于是乎，成千上万的创业者前赴后继，成功上岸者屈指可数，能跑出独角兽者更是微乎其微！...
+                
+                </p>
+                <p class="more"><a href="#">查看详细><span></span></a></p>
+            </li>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="footer_logo">
+                <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li>代理加盟</li>
+                </ul>
+                <ul>
+                    <li>商家合作</li>
+                    <li>便利店</li>
+                    <li>联盟商家</li>
+                    <li>品牌商</li>
+                </ul>
+                <ul>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="footer_mass">
+                <ul>
+                    <p> 深圳市原本简单网络科技有限公司</p>
+                    <p>Shenzhen originally simple network technology co.,LTD</p>
+                </ul>
+                <ul>
+                    <li>Add:深圳市福田区金田路富德生命保险大厦10楼1001室 P.C:518000</li>
+                    <li><span>E-mail:ybjd@yuanbenjiandan.com</span><span>粤ICP备19060365号-1</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+		$('.content').hide();
+		$('.content1').show();
+	var tab=new auiTab({
+		element:document.getElementById('title'),
+	},function(res){
+		console.log(res)
+		$('.content').hide();
+		$('.content'+res.index).show();
+	})
+</script>
+</body>
+</html>

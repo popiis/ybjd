@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=1200,initial-scale=0,user-scalable=0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link href="https://www.yuanbenjiandan.com/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aui-tab.js"></script>
+    <style>
+	.content{width: 1200px;margin: 1% auto 40px;}
+	.tabtitle{display: flex;width: 100%;margin: 50px auto;align-items: center;justify-content: center;}
+	.tabtitle>div{
+		width: 160px;
+		height: 40px;
+		font-size: 14px;
+		border: 1px solid #999999;
+		color: #000000;
+		text-align: center;
+		line-height: 40px;
+		margin-left: 10px;
+		user-select: none;
+		cursor: pointer;
+	}
+	.tabtitle>div.aui-active{
+		background: #e61d4c;
+		border: none;
+		color: #fff;
+	}
+	.content1{
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10rem
+	}
+	.content1>.formtable>p{
+		font-size: 20px;
+		color:#444;
+	}
+	.content1>.formtable>form>input{
+		border:1px solid #b9b8b8;
+		text-indent: 10px;
+		width: 90%;
+		height: 40px;
+		margin-top:20px;
+	}
+	.content1>.formtable>form>label{
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+	}
+	.content1>.formtable>form>label>input{
+		border:1px solid #b9b8b8;
+		text-indent: 10px;
+		width: 45%;
+		height: 40px;
+		margin-top:20px;
+
+	}
+	.content1>.formtable>form>textarea{
+		width:90%;
+		margin-top: 20px;
+		resize:none;
+		text-indent: 10px;
+		padding:5px 0;
+	}
+	.content1>.img{
+		width: 45%;
+    	margin-top: 5rem;
+	}
+	form .btn{
+		cursor: pointer;
+		width:120px;
+		height:45px;
+		background: #e61d4c;
+		border-radius: 5px;
+		margin-top:20px;
+		color:#fff;
+		font-size: 16px;
+		text-align: center;
+		line-height: 45px;
+	}
+.content2{
+	width:80%;
+	margin:0 auto;
+	background: #EEEEEE;
+	padding: 50px 40px;
+	margin-bottom:20px
+}
+.ready{
+	display: flex;
+	justify-content: space-between;
+}
+.ready>.left{
+	width:45%;
+}
+.ready>.right{
+	width:45%;
+}
+.ready>.left>h2{
+	font-size: 40px;
+	letter-spacing: 10px;
+}
+.ready>.left>p{
+	font-size: 16px;
+	margin:10px 0;
+	color:#444
+}
+.ready>.left>.company{
+	font-size: 20px;
+	margin:10px 0;
+	letter-spacing: 0;
+	font-weight: normal;
+	color:#444
+}
+.ready>.left>h2>span{
+	width:100%;
+	border:1px solid #e61d4c;
+	display: block;
+	margin:10px 0;
+}
+.ready>.left>li>p{
+	margin:5px 0;
+	font-size: 16px;
+	color:#444
+}
+.ready>.left>.code{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top:40px;
+	color:#444
+}
+.ready>.left>.code>div>p{
+	margin-top:10px;
+	color:#444
+}
+#myForm_2{
+	width: 50%
+}
+#myForm_2>.right>h2{
+	font-size: 16px;	
+}
+#myForm_2>.right>input{
+	width:100%;
+	border:1px solid #b9b8b8;
+	text-indent: 5px;
+	height: 30px;
+	margin-top:10px;
+}
+#myForm_2>.right>textarea{
+	resize: none;
+	width: 100%;
+	margin-top:10px;
+	border:1px solid #b9b8b8;
+}
+.content3>h2{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.content3>h2>span{
+	border: 1px solid #e61d4c;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+	.massage{
+		border:1px solid #b9b8b8;
+		margin-top:20px;
+	}
+	.massage_header{
+		padding:0 50px;
+		border-bottom:1px solid #b9b8b8;
+	}
+	.massage_content{
+		padding:20px 50px;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 1px;
+	}
+	.massage_header>h2{
+		font-size: 16px;
+		font-weight: bold;
+		margin:5px 0;
+	}
+	.massage_header>.date{
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom:10px;
+	}
+	.massage_header>.date>p{
+		margin-right:50px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.massage_header>.date>p>img{
+		margin-right:0.3rem
+	}
+	.need>h2{
+		font-size: 16px;
+		font-weight: bold;
+		margin-top:20px;
+		padding-bottom: 10px;
+	}
+	.map>img{
+		border:1px solid #b9b8b8;
+		width: 100%;
+		margin-top:5rem;
+	}
+    </style>
+</head>
+<body>
+    <div class="header">
+       <div class="nav">
+            <div class="logo">
+                <img src="http://www.yuanbenjiandan.com/uploads/allimg/20190812/478ca58c637925a3f58a39fd691af69d.png" alt="">
+            </div>
+            <div class="navtab">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="company.html">公司简介</a></li>
+                <li><a href="business.html">业务内容</a></li>
+                <li><a href="news.html">最新动态</a></li>
+                <li class="navActive"><a href="contact.html">联系我们</a></li>
+            </div>
+       </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/contact.jpg" alt="" srcset=""></div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="tabtitle" id="title">
+            <div class="aui-active">代理加盟</div>
+            <div>联系我们</div>
+            <div>加入我们</div>
+        </div>
+        <div class="content content1">
+            <div class="formtable">
+                <p>代理商加盟</p>
+                <form action="{$field.action}" onsubmit="return checkForm_1();" id="myForm_1" method="post">
+                    <input type="text" name="{$field.attr_4}" id="attr_4" placeholder="您的姓名">
+                    <input type="text" name="{$field.attr_5}" placeholder="公司名称">
+                    <input type="text" name="{$field.attr_6}" id="attr_6" placeholder="您的电话">
+                    <input type="text" name="{$field.attr_7}" placeholder="您的邮箱">
+                    <label for="">
+                        <input type="text"  name="{$field.attr_16}" placeholder="意向城市(区域)">
+                        <input type="text"  name="{$field.attr_18}" placeholder="意向城市(区域)人口规模">
+                    </label>
+                    <textarea name="{$field.attr_20}" id="attr_20" cols="10" rows="10" >请填写优势</textarea>
+                <div class="btn" onclick="$('#myForm_1').submit();">提交</div>
+                </form>
+                <script type="text/javascript">
+                    function checkForm_1() {
+                        if (document.getElementById('attr_4').value.length == 0) {
+                            alert('{$field.itemname_4}不能为空！');
+                            return false;
+                        }
+                        if (document.getElementById('attr_6').value.length == 0) {
+                            alert('{$field.itemname_6}不能为空！');
+                            return false;
+                        }
+                        if (document.getElementById('attr_20').value.length == 0) {
+                            alert('{$field.itemname_20}不能为空！');
+                            return false;
+                        }
+        
+        
+                        return true;
+                    }
+                </script>                    
+            </div>
+            <div class="img">
+                <img src="https://www.yuanbenjiandan.com/template/pc/skin/images/daili.jpg" alt="">
+            </div>
+        </div>
+        <div class="content content2">
+            <div class="ready">
+        
+                <div class="left">
+                    <h2>准备好开始了吗?<br>那就与我们取得联系吧<span></span></h2>
+                    <p>想和我们谈谈吗？您可以填写右边的表格，让我们了解您的项目需要，这是一个良好的开始，我们将会与您取得联系</p>
+                    <h2 class="company">深圳市原本简单网络科技有限公司</h2>
+                    <li>
+                        <p>
+                                add:深圳市福田区金田路富德生命保险大厦10楼1001室
+                        </p>
+                        <p >
+                                P.C:518000
+                        </p>
+                        <p >
+                                E-mail:ybjd@yuanbenjiandan.com
+                        </p>
+                        <p >
+                                web:http://www.yuanbenjiandan.com
+                        </p>
+                    </li>
+                    <div class="code">
+                        <div class="img">
+                            <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/a233ef497dbc93eb1437e80daf255192.png" alt="">
+                            <p>公众号二维码</p>
+                        </div>
+                        <div class="img">
+                            <img src="https://www.yuanbenjiandan.com/uploads/allimg/20190813/283ceac6322c69e868fe00bf22553d9c.png" alt="">
+                            <p>客服二维码</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <form action="{$field.action}" onsubmit="return checkForm_2();" id="myForm_2" method="post">
+                <div class="right">
+                    <h2>告诉我们您的需求</h2>
+                    <input type="text" name="{$field.attr_22}" id="attr_22" placeholder="您的姓名 ">
+                    <input type="text" name="{$field.attr_24}" placeholder="公司名称">
+                    <input type="text" name="{$field.attr_26}" id="attr_26" placeholder="您的电话">
+                    <input type="text" name="{$field.attr_28}" placeholder="您的邮箱">
+                    <textarea name="{$field.attr_30}" id="attr_30" cols="30" rows="10">填写详细需求</textarea>
+                </div>		
+                <div class="btn" onclick="$('#myForm_2').submit();">提交</div>
+                </form>
+                <script type="text/javascript">
+                        function checkForm_2() {
+                            if (document.getElementById('attr_22').value.length == 0) {
+                                alert('{$field.itemname_22}不能为空！');
+                                return false;
+                            }
+                            if (document.getElementById('attr_26').value.length == 0) {
+                                alert('{$field.itemname_26}不能为空！');
+                                return false;
+                            }
+                            if (document.getElementById('attr_30').value.length == 0) {
+                                alert('{$field.itemname_30}不能为空！');
+                                return false;
+                            }
+        
+                            return true;
+                        }
+                    </script>
+            </div>
+            <div class="map">
+                <img src="https://www.yuanbenjiandan.com/template/pc/skin/images/map.jpg" alt="">
+            </div>
+        </div>
+        <div class="content content3">
+                <h2>看看有没有合适你的职位<span></span></h2>
+                <div class="massage">
+                    <div class="massage_header">
+                        <h2>测试工程师</h2>
+                        <div class="date">
+                            <p><img src="https://www.yuanbenjiandan.com/template/pc/skin/images/calendar-1.png" alt=""><span>发布日期：2019-08-09</span></p>
+                            <p><img src="https://www.yuanbenjiandan.com/template/pc/skin/images/calendar-3.png" alt=""><span>工作地点：深圳</span></p>
+                            <p><img src="https://www.yuanbenjiandan.com/template/pc/skin/images/calendar-4.png" alt=""><span>招聘人数：1</span></p>
+                        </div>
+                    </div>
+                    <div class="massage_content">
+                            岗位职责：
+
+                            1、负责项目组日常开发、维护工作，遵照开发规范，按时保质的完成开发任务；
+                            
+                            2、参与项目需求分析、功能可行性分析、技术可行性分析和系统架构设计工作；
+                            3、负责编写核心代码，包括架构方案，技术路线和核心算法等；
+                            4、负责开发文档编写。
+                            5、有电商，区块链经验者优先。
+                            
+                            
+                            任职要求：
+                            1.本科以上学历，3年或以上PHP开发经验；
+                            2.精通PHP/MySQL开发，熟悉主流PHP框架；
+                            3.熟悉各种WEB缓存技术，熟悉大型网站架构和性能优化；
+                            4.具备良好的团队合作精神，高度的责任感，善于沟通，为人踏实，抗压能力强，拥有严谨的工作态度
+                            5.能接受加班
+                    </div>
+                </div>
+
+                <div class="need">
+                    <h2>应聘流程及需知:</h2>
+                    <p>
+                            首先请留意上面的招聘信息是否会有合适你的职位。详细阅读职位要求并向我们发送你的个人简历及相关作品，我们将安排专人评审您的邮件，通过对简历进行筛选进行一下流程》面试/复试》确认入职时间》报到》试用》入职
+
+                            薪金要求：请于邮件内写明或面议（试用期工资80%）。
+                            
+                            试用期：3个月
+                            
+                            上班时间：周一至周六，早上9:00-12:00，下午：3:00-18:00
+                            
+                            有意者请发简历，作品和近照至hr@yuanbenjiandan.com合则约见   
+                    </p>
+                </div>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="footer_logo">
+                <img src="img/footer_logo.png" alt="">
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li>代理加盟</li>
+                </ul>
+                <ul>
+                    <li>商家合作</li>
+                    <li>便利店</li>
+                    <li>联盟商家</li>
+                    <li>品牌商</li>
+                </ul>
+                <ul>
+                    <li>加入我们</li>
+                </ul>
+            </div>
+            <div class="footer_mass">
+                <ul>
+                    <p> 深圳市原本简单网络科技有限公司</p>
+                    <p>Shenzhen originally simple network technology co.,LTD</p>
+                </ul>
+                <ul>
+                    <li>Add:深圳市福田区金田路富德生命保险大厦10楼1001室 P.C:518000</li>
+                    <li><span>E-mail:ybjd@yuanbenjiandan.com</span><span>粤ICP备19060365号-1</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+		$('.content').hide();
+		$('.content1').show();
+	var tab=new auiTab({
+		element:document.getElementById('title'),
+	},function(res){
+		console.log(res)
+		$('.content').hide();
+		$('.content'+res.index).show();
+	})
+</script>
+</body>
+</html>
